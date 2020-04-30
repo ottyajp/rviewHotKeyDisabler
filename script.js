@@ -13,3 +13,8 @@ window.document.onkeydown = (e) => {
 window.oncontextmenu = () => {
   return false;
 }
+
+// Suppress incorrect tab close
+window.onbeforeunload = () => {
+  return false;
+}
